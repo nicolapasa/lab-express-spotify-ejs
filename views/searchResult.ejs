@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>
+        Search Result
+    </h1>
+    <div class="display">
+        <% data.body.artists.items.forEach(item => { %>
+           <div class="album">
+       
+
+        <% let img= item.images.filter(res=>res.url!=undefined).map(ele=>ele.url).splice(0,1); %>
+        <% if (!img) { %>
+        <% img='https://placehold.co/600x400/000000/FFFFFF/png' %>
+        <% } %>
+        <img src="<%= img  %>" />  
+        <h2><%- item.name %></h2>   
+        <a href="<%='/albums/'+item.id %>">view album</a>  
+           </div>
+         
+          <% }) %>
+    </div>
+    
+</div>
+
+
+
+  
+
+

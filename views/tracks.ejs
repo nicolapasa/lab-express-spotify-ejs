@@ -1,0 +1,32 @@
+<div class="container">
+<h1>tracks - <%- tracks.items[0].artists.map(artist=>artist.name)%>
+
+</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Listen</th>
+        </tr>
+    </thead>
+<tbody>
+<% tracks.items.forEach(item => { %>
+<tr>
+    <td>
+        <%- item.name %>
+    </td>
+    <td>
+        <audio controls>
+            <source src=" <%- item.preview_url %>" >
+            Your browser does not support the audio element.
+          </audio>
+   
+    </td>
+</tr>
+
+
+
+<% }) %>
+</tbody>
+</table>
+</div>

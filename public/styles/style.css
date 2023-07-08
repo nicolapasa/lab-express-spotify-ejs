@@ -1,0 +1,148 @@
+
+
+*{
+
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-image: url('/images/spotify-background.jpeg');
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    margin:0 auto;
+    position: relative;
+}
+
+.box-search{
+    background-color: rgba(39, 18, 226, 0.4);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    min-height: 400px;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+input{
+    outline: none;
+    width: 100%;
+    padding:1rem;
+}
+
+button{
+   background-color: rgb(226, 19, 229);
+   color: aliceblue;
+   padding:1rem 2rem;
+   border:none;
+   margin-top: 2rem;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+
+h1{
+    font-size: 4rem;
+    text-shadow: 1px 1px rgba(39, 18, 226, 0.4);
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 span{
+    color: rgb(165, 11, 11);
+}
+
+.display{
+    margin: 2rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+   
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    background-color: blueviolet;
+    justify-content: space-between;
+    border-radius: 1rem;
+    box-shadow: 1px 1px  rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+.album img{
+    background-size: cover;
+    height: 250px;
+}
+.album h2{
+color: white;
+text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.album a{
+    background-color: rgb(197, 49, 220);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2rem 1rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+}
+.album a:hover{
+    background-color: rgb(70, 9, 79);
+}
+
+.table{
+    border-collapse: collapse;
+  width: 80%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.table td, .table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:nth-child(odd){background-color: #fff;}
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #cd0ce3;
+  color: white;
+}
+
+footer{
+    width: 100%;
+    padding:2rem;
+    background-color: darkmagenta;
+    color: white;
+    margin-top: auto;
+}
+
+
+footer a{
+
+    color: aliceblue;
+    text-decoration: none;
+    padding:  1rem;
+    text-transform: capitalize;
+    border-radius: 0.3rem;
+  
+}
