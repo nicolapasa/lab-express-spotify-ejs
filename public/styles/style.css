@@ -24,16 +24,16 @@ body{
 }
 
 .box-search{
-    background-color: rgba(39, 18, 226, 0.4);
-    padding: 4rem;
+    background-color: rgba(28, 4, 32, 0.6);
+    padding: 3rem;
     display: flex;
     flex-direction: column;
-    min-width: 800px;
-    min-height: 400px;
-    max-width: 800px;
+    max-width: 300px;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    box-shadow:1px 1px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -42,6 +42,8 @@ input{
     outline: none;
     width: 100%;
     padding:1rem;
+    border-radius: 1rem;
+    border: none;
 }
 
 button{
@@ -51,7 +53,12 @@ button{
    border:none;
    margin-top: 2rem;
    font-weight: bold;
-   text-transform: capitalize;
+   text-transform: uppercase;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+button:hover{
+    background-color: rgb(126, 11, 128);
 }
 
 h1{
@@ -62,7 +69,7 @@ h1{
     text-align: center;
 }
 h1 span{
-    color: rgb(165, 11, 11);
+    color: rgb(37, 3, 35);
 }
 
 .display{
@@ -79,15 +86,19 @@ h1 span{
     flex-direction: column;
     text-align: center;
     width: 300px;
-    background-color: blueviolet;
+    background-color: rgb(30, 29, 31);
     justify-content: space-between;
     border-radius: 1rem;
     box-shadow: 1px 1px  rgba(0, 0, 0, 0.3);
     padding: 1rem;
 }
+.album:hover{
+    background-color: rgb(47, 46, 48);
+}
 .album img{
     background-size: cover;
     height: 250px;
+    border-radius: 1rem;
 }
 .album h2{
 color: white;
@@ -95,7 +106,7 @@ text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .album a{
-    background-color: rgb(197, 49, 220);
+    background-color: rgb(39, 36, 40);
     color: aliceblue;
     text-decoration: none;
     padding: 2rem 1rem;
@@ -103,14 +114,14 @@ text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
 }
 .album a:hover{
-    background-color: rgb(70, 9, 79);
+    background-color: rgb(15, 15, 16);
 }
 
 .table{
     border-collapse: collapse;
   width: 80%;
   padding: 2rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .table td, .table th{
     border: 1px solid #ddd;
@@ -131,7 +142,7 @@ text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 footer{
     width: 100%;
     padding:2rem;
-    background-color: darkmagenta;
+    background-color: rgb(25, 1, 25);
     color: white;
     margin-top: auto;
 }
@@ -145,4 +156,13 @@ footer a{
     text-transform: capitalize;
     border-radius: 0.3rem;
   
+}
+
+
+@media screen and (min-width: 600px) {
+    
+    .box-search{
+        min-width: 400px;
+    }
+
 }
